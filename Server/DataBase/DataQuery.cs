@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 
-namespace Server
+namespace Server.DataBase
 {
     public class DataQuery
     {
         private string _connection;
-        public DataQuery(string connection) 
+        public DataQuery(string connection)
         {
             _connection = connection;
         }

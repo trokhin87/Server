@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot;
 
-namespace Server
+namespace Server.Telegram
 {
     public class TelegramSender
     {
@@ -15,7 +15,7 @@ namespace Server
         {
             this.BotToken = BotToken;
         }
-        public async Task Send(long userID,string message)
+        public async Task Send(long userID, string message)
         {
             var botClient = new TelegramBotClient(BotToken);
             try
